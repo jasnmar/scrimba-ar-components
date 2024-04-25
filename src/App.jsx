@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import './App.css'
 import Menu from './components/Menu/Menu'
+import MenuDropdown from "./components/Menu/MenuDropdown"
+import MenuButton from "./components/Menu/MenuButton"
+
 
 /**
  * Challenge:
@@ -26,10 +29,9 @@ function App() {
 
   return (
     <>
-      <Menu
-        buttonText='Sports'
-        items={["Tennis", "Recquetball", "Pickleball", "Squash"]}
-      />
+        <MenuButton buttonText="SportsBall"></MenuButton>
+        <MenuDropdown items={[ "Tennis", "Recquetball", "Pickleball", "Squash"]}>
+        </MenuDropdown>
     </>
   )
 }

@@ -1,10 +1,10 @@
 import "./Menu.css"
 import { useState } from "react"
-import MenuButton from "./MenuButton"
-import MenuDropdown from "./MenuDropdown"
 
-function Menu({ buttonText = "Menu", items }) {
+
+function Menu({ children}) {
     const [open, setOpen] = useState(true)
+    console.log('children:', children)
 
     function toggle() {
         setOpen(prevOpen => !prevOpen)
@@ -12,11 +12,7 @@ function Menu({ buttonText = "Menu", items }) {
 
     return (
         <div className="menu">
-            <MenuButton
-                buttonText={buttonText}
-                onClick={toggle}
-            />
-            {open && <MenuDropdown items={items} />}
+            {children}
         </div>
     )
 }
