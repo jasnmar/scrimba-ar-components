@@ -5,13 +5,14 @@ import Star from "./components/Star/Star";
 
 function App() {
   //const sports = ["Tennis", "Recquetball", "Pickleball", "Squash"];
+  function onChange() {
+    console.log('onChange Fired')
+  }
   return (
     <>
-      <Star />
+      <Star onChange={onChange} />
 
       <br />
-
-
     </>
   );
 }
