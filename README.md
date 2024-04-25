@@ -11,6 +11,7 @@ Learning Goals
 + React.Children
     * React.cloneElement
 + Context
++ Headless Components
 
 
 Installation: I'll have to figure this out

@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Menu from "./components/Menu/index"
 import Star from "./components/Star/Star";
+import Toggle from "./components/Toggle/Toggle";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -9,7 +10,9 @@ function App() {
 
   return (
     <>
-      <Star />
+      <Toggle>
+        <Star />
+      </Toggle>
       
       <br />
       <hr />
