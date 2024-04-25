@@ -21,7 +21,7 @@ function Menu({ children }) {
   }
 
   return (
-    <ThemeContext.Provider value="false">
+    <ThemeContext.Provider value={false}>
       <div className="menu">
         {children}
       </div>
