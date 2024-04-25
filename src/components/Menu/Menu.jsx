@@ -1,20 +1,15 @@
-import "./Menu.css"
-import { useState } from "react"
+import "./Menu.css";
+import { useState } from "react";
 
+function Menu({ children }) {
+  const [open, setOpen] = useState(true);
+  console.log("children:", children);
 
-function Menu({ children}) {
-    const [open, setOpen] = useState(true)
-    console.log('children:', children)
+  function toggle() {
+    setOpen((prevOpen) => !prevOpen);
+  }
 
-    function toggle() {
-        setOpen(prevOpen => !prevOpen)
-    }
-
-    return (
-        <div className="menu">
-            {children}
-        </div>
-    )
+  return <div className="menu">{children}</div>;
 }
 
-export default Menu
+export default Menu;
