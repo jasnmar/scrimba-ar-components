@@ -10,15 +10,16 @@ function App() {
   const sports = [ "Tennis", "Recquetball", "Pickleball", "Squash"]
 
   return (
-    <>
+    <Menu>
+
         <MenuButton>SportsBall</MenuButton>
         <MenuDropdown>
           {sports.map(sport => (
-            <MenuItem>{sport}</MenuItem>
-
+            <MenuItem key={sport}>{sport}</MenuItem>
+            
           ))}
         </MenuDropdown>
-    </>
+      </Menu>
   )
 }
 

@@ -1,10 +1,8 @@
-import "./Menu.css"
-import Button from "../Button/Button"
+import "./Menu.css";
+import Button from "../Button/Button";
 
-function MenuButton({ children, onClick }) {
-    return (
-        <Button onClick={onClick}>{children}</Button>
-    )
+function MenuButton({ children, clickHandler }) {
+  return <Button onClick={clickHandler}>{children}</Button>;
 }
 
-export default MenuButton
+export default MenuButton;
