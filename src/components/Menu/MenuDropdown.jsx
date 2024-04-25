@@ -1,11 +1,8 @@
-import "./Menu.css"
+import "./Menu.css";
 
-function MenuDropdown({ children }) {
-    return (
-        <div className="menu-dropdown">
-            {children}
-        </div>
-    )
+function MenuDropdown({ children, isOpen }) {
+  console.log("isOpen:", isOpen);
+  return isOpen ? <div className="menu-dropdown">{children}</div> : null;
 }
 
-export default MenuDropdown
+export default MenuDropdown;
