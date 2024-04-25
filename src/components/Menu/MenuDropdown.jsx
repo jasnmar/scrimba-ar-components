@@ -1,14 +1,14 @@
 import "./Menu.css";
+import Toggle from "../Toggle";
 
 function MenuDropdown({ children }) {
-  return open ? (
-      <div 
-        className="menu-dropdown" 
-        aria-hidden={!open}
-        >
-          {children}
-      </div> 
-  ) : null;
+  return (
+    <Toggle.On>
+      <div className="menu-dropdown" aria-hidden={!open}>
+        {children}
+      </div>
+    </Toggle.On>
+  );
   
 }
 

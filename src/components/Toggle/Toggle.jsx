@@ -4,7 +4,7 @@ const ToggleContext = createContext();
 
 function Toggle({ children }) {
 
-  const [on, setOn] = useState(true);
+  const [on, setOn] = useState(false);
   
   function toggle() {
     setOn((prevOn) => !prevOn);
