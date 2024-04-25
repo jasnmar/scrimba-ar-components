@@ -4,20 +4,15 @@ import { useState } from "react";
 
 function Menu({ children }) {
   const [open, setOpen] = useState(true);
-  console.log("children:", children);
 
   function toggle() {
     setOpen((prevOpen) => !prevOpen);
   }
-   /**
-     * Challenge:
-     * Now that MenuButton and MenuDropdown are receiving
-     * `open` and `toggle`, accept the necessary props in
-     * those components and refactor them to use those props
-     * to make the menu work again!
-     * 
-     * Hint: in MenuDropdown, you'll need to use conditional
-     * rendering to either display the div OR display `null`
+
+      /** Discovery Challenge:
+     * In the MenuButton, MenuDropdown, and MenuItem components, 
+     * accept `toggle` and `open` props and just console log 
+     * both of them in all 3 components.
      */
   return (
     <div className="menu">

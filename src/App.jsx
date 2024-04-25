@@ -11,12 +11,10 @@ function App() {
 
   return (
     <Menu>
-
         <MenuButton>SportsBall</MenuButton>
         <MenuDropdown>
           {sports.map(sport => (
             <MenuItem key={sport}>{sport}</MenuItem>
-            
           ))}
         </MenuDropdown>
       </Menu>
