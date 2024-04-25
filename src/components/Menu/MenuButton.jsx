@@ -1,9 +1,9 @@
 import "./Menu.css"
 import Button from "../Button/Button"
 
-function MenuButton({ buttonText, onClick }) {
+function MenuButton({ children, onClick }) {
     return (
-        <Button onClick={onClick}>{buttonText}</Button>
+        <Button onClick={onClick}>{children}</Button>
     )
 }
 

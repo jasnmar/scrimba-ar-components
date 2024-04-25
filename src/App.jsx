@@ -29,7 +29,7 @@ function App() {
 
   return (
     <>
-        <MenuButton buttonText="SportsBall"></MenuButton>
+        <MenuButton>SportsBall</MenuButton>
         <MenuDropdown items={[ "Tennis", "Recquetball", "Pickleball", "Squash"]}>
         </MenuDropdown>
     </>
