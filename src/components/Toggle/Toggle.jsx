@@ -1,6 +1,6 @@
 import { useState, createContext } from "react";
 
-const ToggleScheme = createContext();
+const ToggleContext = createContext();
 
 function Toggle({ children }) {
   /**
@@ -15,16 +15,18 @@ function Toggle({ children }) {
    *    from child components later on
    */
   const [on, setOn] = useState(true);
+  
   function toggle() {
+    console.log("click");
     setOn((prevOn) => !prevOn);
   }
-  const values = {on, toggle}
-  return <>
-      <ToggleScheme.Provider value={values}>
-        {children}
-      </ToggleScheme.Provider>
-    </>;
+  const values = { on, toggle };
+  return (
+    <>
+      <ToggleContext.Provider value={values}>{children}</ToggleContext.Provider>
+    </>
+  );
 }
 
 export default Toggle;
-export { ToggleScheme };
+export { ToggleContext };

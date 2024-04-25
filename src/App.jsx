@@ -1,17 +1,18 @@
-import { useState } from "react";
+//import { useState } from "react";
 import "./App.css";
 import Menu from "./components/Menu/index"
-import Star from "./components/Star/Star";
-import Toggle from "./components/Toggle/Toggle";
+import Star from "./components/Star/Star"
+import Toggle from "./components/Toggle/index"
 
 function App() {
-  const [count, setCount] = useState(0);
   const sports = ["Tennis", "Recquetball", "Pickleball", "Squash"];
 
   return (
     <>
       <Toggle>
-        <Star />
+        <Toggle.Button>
+          <Star />
+        </Toggle.Button>
       </Toggle>
       
       <br />
