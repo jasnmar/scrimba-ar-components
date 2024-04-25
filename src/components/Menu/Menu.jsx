@@ -1,6 +1,5 @@
-import React from "react"
 import "./Menu.css";
-import { useState } from "react";
+import { useState, cloneElement, Children } from "react";
 
 function Menu({ children }) {
   const [open, setOpen] = useState(true);
@@ -11,8 +10,8 @@ function Menu({ children }) {
 
   return (
     <div className="menu">
-      {React.Children.map(children, (child) => {
-        return React.cloneElement(child, {
+      {Children.map(children, (child) => {
+        return cloneElement(child, {
           clickHandler: toggle, isOpen: open
         })
       })}

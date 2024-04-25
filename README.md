@@ -9,7 +9,8 @@ Learning Goals
 + Prop Drilling
 + Compound Components
 + React.Children
-+ React.cloneElement
+    * React.cloneElement
++ Context
 
 
 Installation: I'll have to figure this out
