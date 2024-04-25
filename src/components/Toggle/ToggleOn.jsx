@@ -1,8 +1,9 @@
-import { useContext } from "react";
 import { ToggleContext } from "./Toggle";
+import { useContext } from "react";
 
-function ToggleOn({ children }) {
-    const { on } = useContext(ToggleContext)
+function ToggleOn({ children}) {
+    const { on, toggle } = useContext(ToggleContext)
+    console.log('on:', on)
 
     return (
         <>

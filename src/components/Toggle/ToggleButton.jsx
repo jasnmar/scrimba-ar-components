@@ -2,7 +2,7 @@ import { ToggleContext } from "./Toggle";
 import { useContext } from "react";
 
 function ToggleButton({ children}) {
-    const { on, toggle} = useContext(ToggleContext)
+    const { on, toggle } = useContext(ToggleContext)
     return (
         <div onClick={toggle}>
             {children}
