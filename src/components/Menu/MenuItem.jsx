@@ -1,8 +1,6 @@
 import "./Menu.css";
 
-function MenuItem({ children, isOpen, clickHandler }) {
-  console.log('MenuItem - clickHandler: ', clickHandler)
-  console.log('MenuItem - isOpen: ', isOpen)
+function MenuItem({ children }) {
   return (
     <div className="menu-item" key={children}>
       {children}
