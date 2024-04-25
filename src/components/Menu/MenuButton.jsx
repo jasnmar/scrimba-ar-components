@@ -4,8 +4,17 @@ import { useContext } from "react";
 import { ButtonContext } from "./Menu";
 
 function MenuButton({ children }) {
-  const { toggle } = useContext(ButtonContext)
-  return <Button onClick={toggle}>{children}</Button>;
+  const { toggle, open, menuId } = useContext(ButtonContext)
+  
+  return (
+    <Button 
+      onClick={toggle} 
+      aria-expanded={open} 
+      aria-haspopup="true"
+      aria-controls={menuId}>
+        {children}
+      </Button>
+  )
 }
 
 export default MenuButton;

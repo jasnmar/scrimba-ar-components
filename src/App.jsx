@@ -1,24 +1,21 @@
-import { useState } from 'react'
-import './App.css'
-import Menu from './components/Menu/Menu'
-import MenuDropdown from "./components/Menu/MenuDropdown"
-import MenuButton from "./components/Menu/MenuButton"
-import MenuItem from './components/Menu/MenuItem'
+import { useState } from "react";
+import "./App.css";
+import Menu from "./components/Menu/index"
 
 function App() {
-  const [count, setCount] = useState(0)
-  const sports = [ "Tennis", "Recquetball", "Pickleball", "Squash"]
+  const [count, setCount] = useState(0);
+  const sports = ["Tennis", "Recquetball", "Pickleball", "Squash"];
 
   return (
     <Menu>
-        <MenuButton>SportsBall</MenuButton>
-        <MenuDropdown>
-          {sports.map(sport => (
-            <MenuItem key={sport}>{sport}</MenuItem>
-          ))}
-        </MenuDropdown>
-      </Menu>
-  )
+      <Menu.Button>SportsBall</Menu.Button>
+      <Menu.DropDown>
+        {sports.map((sport) => (
+          <Menu.Item key={sport}>{sport}</Menu.Item>
+        ))}
+      </Menu.DropDown>
+    </Menu>
+  );
 }
 
-export default App
+export default App;
