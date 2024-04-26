@@ -1,5 +1,6 @@
 import { useState, createContext, useEffect, useRef } from "react";
 import useEffectOnUpdate from "../../hooks/useEfffectOnUpdate";
+import useToggle from "../../hooks/useToggle";
 
 const ToggleContext = createContext();
 
@@ -10,6 +11,7 @@ function Toggle({ children, onToggle = () => {} }) {
   // function toggle() {
   //   setOn((prevOn) => !prevOn);
   // }
+  const [on, toggle] = useToggle()
   useEffectOnUpdate(() => {
     onToggle()
   },[on])
