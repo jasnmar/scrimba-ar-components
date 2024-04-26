@@ -13,18 +13,16 @@ const MenuContext = createContext()
  *    callback, which we'll work on fixing soon).
  */
 
-function Menu({children}) {
-  const [open, toggleOpen] = useToggle()
-  const values = {open, toggleOpen}
+function Menu({ children, onChange }) {
+  const [open, toggleOpen] = useToggle();
+  const values = { open, toggleOpen };
   return (
-      <MenuContext.Provider value={values}>
-        <div className="menu" role="menu">
-          {children}
-        </div>
-      </MenuContext.Provider>
-
-
-    )
+    <MenuContext.Provider value={values}>
+      <div className="menu" role="menu">
+        {children}
+      </div>
+    </MenuContext.Provider>
+  );
 }
 
 export default Menu;
