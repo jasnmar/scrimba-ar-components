@@ -13,12 +13,6 @@ function Toggle({ children, onToggle = () => {} }) {
   useEffectOnUpdate(() => {
     onToggle()
   },[on])
-      /**
-     * Challenge: use our new, shiny custom hook
-     * to set up the effect again. You'll know it's
-     * working when the console log runs after clicking
-     * the box, but not on the initial render.
-     */
 
   const values = { on, toggle };
   return (

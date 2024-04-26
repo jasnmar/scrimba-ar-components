@@ -13,9 +13,3 @@ function useEffectOnUpdate(callback, dependenciesArray) {
 }
 
 export default useEffectOnUpdate
-
-/**
- * Mini-challenge:
- * Update the code to use our hook's parameters
- * instead of the values from the Toggle component
- */
