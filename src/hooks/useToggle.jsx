@@ -7,13 +7,13 @@ import useEffectOnUpdate from "./useEfffectOnUpdate";
  * 2. Think: how can we call this `onToggle` function any time
  *    `on` changes, but NOT on the first render? 🤔
  */
-function useToggle(initialValue = false, useToggle = () => {}) {
+function useToggle({initialValue = false, onToggle = () => {}}) {
   const [on, setOn] = useState(initialValue);
 
   function toggle() {
     setOn((prevOn) => !prevOn);
   }
-  useEffectOnUpdate(() => useToggle(on) )
+  useEffectOnUpdate(() => onToggle(on) )
   return [on, toggle];
 }
 

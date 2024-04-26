@@ -12,7 +12,7 @@ import useToggle from "../../hooks/useToggle";
  */
 
 function Star() {
-  const [on, toggle] = useToggle()
+  const [on, toggle] = useToggle({})
 
   return (
     <div onClick={toggle}>
