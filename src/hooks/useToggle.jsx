@@ -1,19 +1,20 @@
 import { useState } from "react";
+import useEffectOnUpdate from "./useEfffectOnUpdate";
 /**
  * Challenge:
- * 1. Pass a parameter called `initialValue` to our custom hook.
- *    Have its default be `false` in case that parameter isn't
- *    provided when useToggle() is called.
- * 2. Initialize state with the `initialValue` parameter
+ * 1. Pass a second parameter called `onToggle` to useToggle.
+ *    Give it a "noop" function `() => {}` as a default.
+ * 2. Think: how can we call this `onToggle` function any time
+ *    `on` changes, but NOT on the first render? 🤔
  */
-function useToggle(initialValue = false) {
+function useToggle(initialValue = false, useToggle = () => {}) {
+  const [on, setOn] = useState(initialValue);
 
-    const [on, setOn] = useState(initialValue);
-
-    function toggle() {
-      setOn((prevOn) => !prevOn);
-    }
-    return [on, toggle]
+  function toggle() {
+    setOn((prevOn) => !prevOn);
+  }
+  useEffectOnUpdate(() => useToggle(on) )
+  return [on, toggle];
 }
 
 export default useToggle
