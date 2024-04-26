@@ -16,15 +16,7 @@ function App() {
   }
   return (
     <>
-      <Toggle onToggle={()=> console.log("toggled")}>
-        <Toggle.Button>
-          <Toggle.Display>
-          {(on) => {
-              return <div className={"box " + (on ? "filled" : "")}></div>
-              }}
-          </Toggle.Display>
-        </Toggle.Button>
-      </Toggle>
+      <Star />
     </>
   );
 }
@@ -49,6 +41,16 @@ function App() {
 <div className="box"></div>
 </Toggle.Off> */}
 
+
+{/* <Toggle onToggle={()=> console.log("toggled")}>
+<Toggle.Button>
+  <Toggle.Display>
+  {(on) => {
+      return <div className={"box " + (on ? "filled" : "")}></div>
+      }}
+  </Toggle.Display>
+</Toggle.Button>
+</Toggle> */}
 
 export default App;
 
