@@ -32,7 +32,7 @@ function App() {
         <Badge color="purple" variant="pill">Pill Text</Badge>
         <Badge color="pink" variant="pill">Pill Text</Badge>
       </div>
-      <h2>Banner</h2>
+      <h2>Banners</h2>
       <div className="component-list">
         <Banner 
           onClick={()=> console.log("clacked")} 
