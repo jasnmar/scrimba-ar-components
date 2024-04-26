@@ -6,7 +6,7 @@ button {
     cursor: pointer;
     font-weight: 700;
     padding: 9px 17px;
-    border-radius: 6px;
+    border-radius: var(--bdr-standard);
     line-height: 24px;
     display: flex;
     align-items: center;

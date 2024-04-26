@@ -2,6 +2,8 @@
 import "./App.css";
 import Menu from "./components/Menu/index"
 import Star from "./components/Star/Star";
+import Button from "./components/Button/Button";
+import Badge from "./components/Badge/Badge";
 
 
 function App() {
@@ -9,16 +11,50 @@ function App() {
 
   return (
     <>
-      <Star />
-      <br />
-      <Menu onOpen={() => console.log("Opened")}>
-        <Menu.Button>Sports</Menu.Button>
-        <Menu.DropDown>
-          {sports.map((sport) => (
-            <Menu.Item key={sport}>{sport}</Menu.Item>
-          ))}
-        </Menu.DropDown>
-      </Menu>
+      <h1>Components</h1>
+      <h2>Badges</h2>
+      <div className="component-list">
+        <Badge onCLick={() => console.log("clickity")}>Badge Text</Badge>
+        <Badge color="red">Badge Text</Badge>
+        <Badge color="yellow">Badge Text</Badge>
+        <Badge color="green">Badge Text</Badge>
+        <Badge color="blue">Badge Text</Badge>
+        <Badge color="indigo">Badge Text</Badge>
+        <Badge color="purple">Badge Text</Badge>
+        <Badge color="pink">Badge Text</Badge>
+        <Badge variant="pill">Pill Text</Badge>
+        <Badge color="red" variant="pill">Pill Text</Badge>
+        <Badge color="yellow" variant="pill">Pill Text</Badge>
+        <Badge color="green" variant="pill">Pill Text</Badge>
+        <Badge color="blue" variant="pill">Pill Text</Badge>
+        <Badge color="indigo" variant="pill">Pill Text</Badge>
+        <Badge color="purple" variant="pill">Pill Text</Badge>
+        <Badge color="pink" variant="pill">Pill Text</Badge>
+      </div>
+      <h2>Buttons</h2>
+      <div className="component-list">
+        <Button>Standard Button</Button>
+        <Button size="lg">Large Button</Button>
+        <Button size="sm">Small Button</Button>
+        <Button variant="success">Success Button</Button>
+        <Button variant="warning">Warning Button</Button>
+        <Button variant="danger">Danger Button</Button>
+      </div>
+      <h2>Menu</h2>
+      <div className="component-list">
+        <Menu onOpen={() => {}}>
+          <Menu.Button>Sports</Menu.Button>
+          <Menu.DropDown>
+            {sports.map((sport) => (
+              <Menu.Item key={sport}>{sport}</Menu.Item>
+            ))}
+          </Menu.DropDown>
+        </Menu>
+      </div>
+      <h2>Star</h2>
+      <div className="component-list">
+        <Star /> <Star isOn="true"/>
+      </div>
     </>
   );
 }
