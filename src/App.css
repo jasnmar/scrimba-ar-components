@@ -2,12 +2,16 @@
     --bdr-standard: 6px;
     --clr-red-bg: #FEE2E2;
     --clr-red-fg: #991B1B;
+    --clr-red-md: #BB4444;
     --clr-yel-bg: #FEF3C7;
     --clr-yel-fg: #92400E;
+    --clr-yel-md: #B45309;
     --clr-grn-bg: #D1FAE5;
     --clr-grn-fg: #065F46;
+    --clr-grn-md: #047857;
     --clr-blu-bg: #DBEAFE;
     --clr-blu-fg: #1E40AF;
+    --clr-blu-md: #1C51B9;
     --clr-ind-bg: #E0E7FF;
     --clr-ind-fg: #3730A3;
     --clr-pur-bg: #EDE9FE;

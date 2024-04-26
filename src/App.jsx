@@ -4,6 +4,7 @@ import Menu from "./components/Menu/index"
 import Star from "./components/Star/Star";
 import Button from "./components/Button/Button";
 import Badge from "./components/Badge/Badge";
+import Banner from "./components/Banner/Banner";
 
 
 function App() {
@@ -30,6 +31,34 @@ function App() {
         <Badge color="indigo" variant="pill">Pill Text</Badge>
         <Badge color="purple" variant="pill">Pill Text</Badge>
         <Badge color="pink" variant="pill">Pill Text</Badge>
+      </div>
+      <h2>Banner</h2>
+      <div className="component-list">
+        <Banner 
+          onClick={()=> console.log("clacked")} 
+          detail="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam." 
+          variant="success">
+            Congratulations!
+        </Banner>
+        <Banner 
+          detail="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam quo totam eius aperiam dolorum." 
+          variant="warning">
+            Attention
+        </Banner>
+        <Banner 
+          detail="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam quo totam eius aperiam dolorum." 
+          variant="error">
+            There is a problem with your application
+        </Banner>
+        <Banner 
+          detail="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam." 
+          variant="">
+            Update available
+        </Banner>
+        <Banner variant="success">Congratulations!</Banner>
+        <Banner variant="warning">Attention</Banner>
+        <Banner variant="error">There is a problem with your application</Banner>
+        <Banner variant="">Update available</Banner>
       </div>
       <h2>Buttons</h2>
       <div className="component-list">

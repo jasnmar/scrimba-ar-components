@@ -1,0 +1,70 @@
+.banner {
+    background-color: var(--clr-blu-bg);
+    color: var(--clr-blu-fg);
+    color: var(--clr-blu-md); 
+    width: 100%;
+    min-height: 30px;
+    border-radius: var(--bdr-standard);
+    padding: 10px 20px;
+}
+
+.banner--inner {
+    display: flex;
+    gap: 6px;
+}
+
+.banner--text {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner h1 {
+    font-size: .875rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.banner p {
+    margin-top: 1em;
+    font-size: .875rem;
+}
+
+.banner--error {
+    background-color: var(--clr-red-bg);
+    color: var(--clr-red-fg);
+}
+
+.banner--error-body {
+    color: var(--clr-red-md);
+}
+
+.banner--warning {
+    background-color: var(--clr-yel-bg);
+    color: var(--clr-yel-fg);
+}
+
+.banner--warning-body {
+    color: var(--clr-yel-md);
+}
+
+.banner--success {
+    background-color: var(--clr-grn-bg);
+    color: var(--clr-grn-fg);
+}
+
+.banner--success-body {
+    color: var(--clr-grn-md);
+}
+
+.banner--neutral {
+    background-color: var(--clr-blu-bg);
+    color: var(--clr-blu-fg);
+}
+
+.banner--neutral-body {
+    color: var(--clr-blu-md); 
+}
+
+.banner--no-detail {
+    align-items: center;
+}
