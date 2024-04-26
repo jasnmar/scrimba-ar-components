@@ -5,11 +5,11 @@ const ToggleContext = createContext();
 
 function Toggle({ children, onToggle = () => {} }) {
 
-  const [on, setOn] = useState(false);
+  // const [on, setOn] = useState(false);
 
-  function toggle() {
-    setOn((prevOn) => !prevOn);
-  }
+  // function toggle() {
+  //   setOn((prevOn) => !prevOn);
+  // }
   useEffectOnUpdate(() => {
     onToggle()
   },[on])
