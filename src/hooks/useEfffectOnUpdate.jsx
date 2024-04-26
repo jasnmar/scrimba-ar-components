@@ -9,7 +9,7 @@ function useEffectOnUpdate(callback, dependenciesArray) {
         } else {
           callback()
         }
-      },[dependenciesArray])
+      }, dependenciesArray)
 }
 
 export default useEffectOnUpdate
