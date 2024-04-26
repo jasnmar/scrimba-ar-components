@@ -1,0 +1,23 @@
+:root {
+    --bdr-standard: 6px;
+    --clr-red-bg: #FEE2E2;
+    --clr-red-fg: #991B1B;
+    --clr-yel-bg: #FEF3C7;
+    --clr-yel-fg: #92400E;
+    --clr-grn-bg: #D1FAE5;
+    --clr-grn-fg: #065F46;
+    --clr-blu-bg: #DBEAFE;
+    --clr-blu-fg: #1E40AF;
+    --clr-ind-bg: #E0E7FF;
+    --clr-ind-fg: #3730A3;
+    --clr-pur-bg: #EDE9FE;
+    --clr-pur-fg: #5B21B6;
+    --clr-pnk-bg: #FCE7F3;
+    --clr-png-fg: #9D174D;
+}
+
+.component-list {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}

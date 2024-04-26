@@ -1,0 +1,44 @@
+.badge {
+    font-size: .875rem;
+    background-color: #F3F4F6 ;
+    min-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    border-radius: var(--bdr-standard);
+    color: #1F2937;
+}
+
+.pill {
+    border-radius: 1.75em;
+}
+
+.red {
+    background-color: var(--clr-red-bg);
+    color: var(--clr-red-fg);
+}
+.yellow {
+    background-color: (--clr-yel-bg);
+    color: var(--clr-yel-fg);
+}
+.green {
+    background-color: var(--clr-grn-bg);
+    color: var(--clr-grn-fg);
+}
+.blue {
+    background-color: var(--clr-blu-bg);
+    color: var(--clr-blu-fg);
+}
+.indigo {
+    background-color: var(--clr-ind-bg);
+    color: var(--clr-ind-fg);
+}
+.purple {
+    background-color: var(--clr-pur-bg);
+    color: var(--clr-pur-fg);
+}
+.pink {
+    background-color: var(--clr-pnk-bg);
+    color: var(--clr-png-fg);
+}
