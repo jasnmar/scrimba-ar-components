@@ -1,5 +1,4 @@
 import "./Star.css";
-import Toggle from "../Toggle";
 import { BsStar, BsStarFill } from "react-icons/bs";
 import useToggle from "../../hooks/useToggle";
 
@@ -12,7 +11,7 @@ import useToggle from "../../hooks/useToggle";
  * you get from useToggle()
  */
 
-function Star({ onChange }) {
+function Star() {
   const [on, toggle] = useToggle()
 
   return (
