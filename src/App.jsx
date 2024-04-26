@@ -8,9 +8,14 @@ function App() {
   function onChange() {
     console.log('onChange Fired')
   }
+  function starChange() {
+    let i = 1;
+    i++
+    console.log('i: ', i)
+  }
   return (
     <>
-      <Star onChange={onChange} />
+      <Star onChange={starChange} />
 
       <br />
       <Menu onOpen={onChange}>

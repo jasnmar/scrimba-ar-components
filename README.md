@@ -1,5 +1,5 @@
 # Components 
-##M odule 11, Advanced React 
+## Module 11, Advanced React 
 from the Scrimba.com Frontend Career Path
 
 Learning Reusable Components
@@ -12,8 +12,17 @@ Learning Goals
     * React.cloneElement
 + Context
 + Headless Components
++ Render Props
 
 
-Installation: I'll have to figure this out
+Installation:
+Prod:
+    npm install
+    npm build
+    npm preview
+
+Dev:
+    npm install
+    npm run dev
 
 Deployment https://jason-scrimba-components.netlify.app/
