@@ -32,7 +32,7 @@ function App() {
   }
   return (
     <>
-      <Toggle>
+      <Toggle onToggle={()=> console.log("toggled")}>
         <Toggle.Button>
           <Toggle.Display>
           {(on) => {
