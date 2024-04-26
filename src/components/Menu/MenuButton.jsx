@@ -1,15 +1,14 @@
 import "./Menu.css";
 import Button from "../Button/Button";
-import Toggle from "../Toggle";
+import { useContext } from "react";
+import { MenuContext } from "./Menu";
 
 function MenuButton({ children }) {
-  
+  const { toggleOpen } = useContext(MenuContext);
   return (
-    <Toggle.Button>
-      <Button aria-expanded={open} aria-haspopup="true">
-        {children}
-      </Button>
-    </Toggle.Button>
+    <Button onClick={toggleOpen} aria-expanded={open} aria-haspopup="true">
+      {children}
+    </Button>
   );
 }
 

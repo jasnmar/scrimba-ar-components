@@ -1,15 +1,21 @@
 import "./Menu.css";
-import Toggle from "../Toggle";
+import useToggle from "../../hooks/useToggle";
+import { createContext } from "react";
 
-function Menu({children, onOpen}) {
+const MenuContext = createContext()
+
+function Menu({ children, onOpen }) {
+  const [open, toggleOpen] = useToggle({initialValue: false, onToggle: onOpen});
+  const values = { open, toggleOpen };
+  
   return (
-    <Toggle onToggle={onOpen}>
+    <MenuContext.Provider value={values}>
       <div className="menu" role="menu">
         {children}
       </div>
-    </Toggle>
-
-    )
+    </MenuContext.Provider>
+  );
 }
 
 export default Menu;
+export { MenuContext }

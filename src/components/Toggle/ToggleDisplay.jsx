@@ -4,7 +4,7 @@ import { ToggleContext } from "./Toggle"
 
 
 function ToggleDisplay({ children }) {
-    const { on, toggle } = useContext(ToggleContext)
+    const { on } = useContext(ToggleContext)
 
     return children(on)
 

@@ -1,15 +1,18 @@
 import "./Menu.css";
-import Toggle from "../Toggle";
+import { MenuContext } from "./Menu";
+import { useContext } from "react";
 
 function MenuDropdown({ children }) {
+  const { open } = useContext(MenuContext);
   return (
-    <Toggle.On>
-      <div className="menu-dropdown" aria-hidden={!open}>
-        {children}
-      </div>
-    </Toggle.On>
+    <>
+      {open && (
+        <div className="menu-dropdown" aria-hidden={!open}>
+          {children}
+        </div>
+      )}
+    </>
   );
-  
 }
 
 export default MenuDropdown;
