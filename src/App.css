@@ -18,6 +18,7 @@
     --clr-pur-fg: #5B21B6;
     --clr-pnk-bg: #FCE7F3;
     --clr-png-fg: #9D174D;
+    --box-shd-standard: 0px 0px 10px gray;
 }
 
 .component-list {

@@ -5,6 +5,7 @@ import StarPage from "./components/Star/StarPage";
 import ButtonPage from "./components/Button/ButtonPage";
 import BadgePage from "./components/Badge/BadgePage";
 import BannerPage from "./components/Banner/BannerPage";
+import CardPage from "./components/Card/CardPage";
 
 
 function App() {
@@ -14,8 +15,10 @@ function App() {
       <BadgePage />
       <BannerPage />
       <ButtonPage />
+      <CardPage />
       <MenuPage />
       <StarPage />
+
 
     </>
   );
