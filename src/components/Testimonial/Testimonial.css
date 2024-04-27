@@ -18,6 +18,10 @@
   background-color: #2545B8;
   color: white;
 }
+
+.testimonial--image-card {
+  margin-top: 16px;
+}
 .testimonial--image-card,
 .testimonial--simple-card {
   width: 80%;
@@ -33,6 +37,7 @@
   justify-content: center;
   min-height: 444px;
 }
+
 
 .testimonial--headshot {
   position: absolute;
