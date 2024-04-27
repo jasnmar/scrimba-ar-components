@@ -18,12 +18,14 @@ Learning Goals
 
 Installation:
 Prod:
-    npm install
-    npm build
-    npm preview
-
+```
+npm install
+npm build
+npm preview
+```
 Dev:
-    npm install
-    npm run dev
-
+```
+npm install
+npm run dev
+```
 Deployment https://jason-scrimba-components.netlify.app/
