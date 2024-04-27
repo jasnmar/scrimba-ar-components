@@ -33,16 +33,19 @@ button.button-lg {
 }
 
 button.success {
-    color: #047857;
-    border-color: #047857;
+    color: var(--clr-grn-fg);
+    border-color: var(--clr-grn-fg);
+    background-color: var(--clr-grn-bg);
 }
 
 button.warning {
-    color: #FBBF24;
-    border-color: #FBBF24;
+    color: var(--clr-yel-fg);
+    border-color: var(--clr-yel-fg);
+    background-color: var(--clr-yel-bg);
 }
 
 button.danger {
-    color: #F87171;
-    border-color: #F87171;
+    color: var(--clr-red-fg);
+    border-color: var(--clr-red-fg);
+    background-color: var(--clr-red-bg);
 }
