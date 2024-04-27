@@ -24,7 +24,7 @@ function CardPage() {
           </ul>
         </div>
       </div>
-      <Card title="Easy Deployment">
+      <Card onClick={() => console.log("clopity")}title="Easy Deployment">
         Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
       </Card>
     </>

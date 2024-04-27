@@ -10,6 +10,7 @@ body {
   display: flex;
   font-family: 'Inter','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin-top: 20px;
+  color: #111827;
 }
 
 .box {

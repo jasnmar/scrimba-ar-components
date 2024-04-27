@@ -1,0 +1,151 @@
+/* Typography */
+.testimonial--simple-card h1, 
+.testimonial--image-card h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+.testimonial--simple-card h1 {
+  text-align: center;
+}
+
+.testimonial--light-background {
+  background-color: #F9FAFB;
+}
+
+.testimonial--dark-background {
+  background-color: #2545B8;
+  color: white;
+}
+
+.testimonial--image-card {
+  margin-top: 16px;
+}
+.testimonial--image-card,
+.testimonial--simple-card {
+  width: 80%;
+  margin-bottom: 50px;
+  min-height: 400px;
+  position: relative;
+}
+
+.testimonial--simple-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 444px;
+}
+
+
+.testimonial--headshot {
+  position: absolute;
+  width: 384px;
+  height: 464px;
+  top: -16px;
+  left: 32px;
+  border-radius: var(--bdr-standard);
+  
+}
+.testimonial--simple-card h1 {
+  width: 70%;
+}
+
+.testimonial--image-text-content {
+  padding-left: 432px;
+
+}
+
+.testimonial--card h3,
+.testimonial--card p {
+  display: inline;
+  font-weight: 400;
+}
+
+.testimonial--simple-card .testimonial--separator  {
+  color: #2E59F3;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+.testimonial--signature {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.testimonial--logo {
+  width: 43px;
+  height: 30px;
+}
+
+.testimonial--label {
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.testimonial--image-title {
+  font-weight: 400;
+}
+
+.testimonial--title {
+  color: #6B7280;
+}
+
+.testimonial--grid-feature {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 60%;
+  width: 14%;
+}
+
+.testimonial--image-card h3 {
+  margin-top: 0px;
+  display: block;
+  margin-bottom: 6px;
+}
+.testimonial--workcation {
+  padding-top: 10px;
+}
+#testimonial--work {
+  width: 56px;
+}
+#testimonail--cation {
+  width: 67px;
+}
+
+
+
+@media (max-width: 600px) {
+  .testimonial--card {
+    width: 95%;
+    align-items: flex-start;
+    padding: 1em;
+  }
+  .testimonial--grid-feature {
+    height: 20%;
+    width: 60%;
+  }
+  .testimonial--card h1 {
+    text-align: left;
+    width: 90%;
+  }
+
+  .testimonial--card h3,
+  .testimonial--card p {
+    display: block;
+    margin: 0;
+  }
+
+  .testimonial--signature {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .testimonial--card .testimonial--separator  {
+    display: none;
+  }
+}
