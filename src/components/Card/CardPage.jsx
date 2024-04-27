@@ -6,16 +6,13 @@ function CardPage() {
     <h2>Cards</h2>
       <div className="features">
         <div className="feature-col">
-          <h3>Variants</h3>
+          <h3>Title</h3>
           <ul>
-            <li>success</li>
-            <li>warning</li>
-            <li>error</li>
-            <li>(default)</li>
+            <li>title</li>
           </ul>
         </div>
         <div className="feature-col">
-          <h3>Text</h3>
+        <h3>Body</h3>
           <ul>
             <li>children</li>
           </ul>
