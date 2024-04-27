@@ -24,4 +24,27 @@
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+
+.features {
+    color: white;
+    display: flex;
+    gap: 20px;
+}
+
+.feature-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-col h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.feature-col ul {
+    padding-left: 20px;
+    margin-top: 10px;
+
 }

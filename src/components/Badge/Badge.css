@@ -18,6 +18,7 @@
     background-color: var(--clr-red-bg);
     color: var(--clr-red-fg);
 }
+
 .yellow {
     background-color: (--clr-yel-bg);
     color: var(--clr-yel-fg);

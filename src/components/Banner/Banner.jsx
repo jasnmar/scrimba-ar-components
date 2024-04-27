@@ -41,7 +41,9 @@ function Banner({ variant = "neutral", detail, children, onClick = () => {} }) {
     bannerInfo = variants[0];
   }
   if(!detail) {
-    bannerInfo.innerClass += " banner--no-detail"
+    if(bannerInfo.innerClass.search("banner--no-detail")<0) {
+      bannerInfo.innerClass += " banner--no-detail"
+    }
   }
   return (
     <div onClick={onClick} className={bannerInfo.classList}>
