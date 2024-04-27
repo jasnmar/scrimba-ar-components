@@ -1,20 +1,55 @@
-.testimonial--card {
-  width: 80%;
+/* Typography */
+.testimonial--simple-card h1, 
+.testimonial--image-card h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+.testimonial--simple-card h1 {
+  text-align: center;
+}
+
+.testimonial--light-background {
   background-color: #F9FAFB;
+}
+
+.testimonial--dark-background {
+  background-color: #2545B8;
+  color: white;
+}
+.testimonial--image-card,
+.testimonial--simple-card {
+  width: 80%;
+  margin-bottom: 50px;
+  min-height: 400px;
+  position: relative;
+}
+
+.testimonial--simple-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 50px;
   min-height: 444px;
-  position: relative;
 }
-.testimonial--card h1 {
-  font-size: 1.5rem;
-  text-align: center;
+
+.testimonial--headshot {
+  position: absolute;
+  width: 384px;
+  height: 464px;
+  top: -16px;
+  left: 32px;
+  border-radius: var(--bdr-standard);
+  
+}
+.testimonial--simple-card h1 {
   width: 70%;
-  font-weight: 400;
-  line-height: 1.5em;
+}
+
+.testimonial--image-text-content {
+  padding-left: 432px;
+
 }
 
 .testimonial--card h3,
@@ -23,7 +58,7 @@
   font-weight: 400;
 }
 
-.testimonial--card .testimonial--separator  {
+.testimonial--simple-card .testimonial--separator  {
   color: #2E59F3;
   font-weight: bolder;
   font-size: 1.5rem;
@@ -46,9 +81,14 @@
   padding-top: 50px;
 }
 
+.testimonial--image-title {
+  font-weight: 400;
+}
+
 .testimonial--title {
   color: #6B7280;
 }
+
 .testimonial--grid-feature {
   position: absolute;
   bottom: 0;
@@ -57,6 +97,11 @@
   width: 14%;
 }
 
+.testimonial--image-card h3 {
+  margin-top: 0px;
+  display: block;
+  margin-bottom: 6px;
+}
 .testimonial--workcation {
   padding-top: 10px;
 }

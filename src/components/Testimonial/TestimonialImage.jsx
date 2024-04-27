@@ -1,11 +1,22 @@
 import "./Testimonial.css"
+import quote from "./quote.png"
 
-function TestimonialImage() {
-  //Variants = simple / image
+function TestimonialImage({children, image, person, personTitle, onClick = () => {}}) {
+  console.log('image: ', image)
   return (
-    <>
-      <h1>Testimonial</h1>
-    </>
+    <div onClick={onClick} className="testimonial--image-card testimonial--dark-background">
+      <div className="testimonial--label">
+        <img className="testimonial--headshot" alt="headshot" src={image}></img>
+      </div>
+      <div className="testimonial--image-text-content">
+        <img src={quote}></img>
+        <h1>{children}</h1>
+          <h3>{person}</h3>
+          <h3 className="testimonial--image-title">{personTitle}</h3>
+      </div>
+      <div className="testimonial--grid-feature">
+      </div>
+    </div>
   )
 }
 

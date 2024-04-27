@@ -5,9 +5,8 @@ import cation from "./cation.png"
 import smallBox from "./small-box.png"
 
 function TestimonialSimple({children, person, personTitle, onClick = () => {}}) {
-  //Variants = simple / image
   return (
-    <div onClick={onClick} className="testimonial--card">
+    <div onClick={onClick} className="testimonial--simple-card testimonial--light-background">
       <div className="testimonial--label">
         <img className="testimonial--logo" alt="workcation logo" src={logo}></img>
         <div className="testimonial--workcation">
