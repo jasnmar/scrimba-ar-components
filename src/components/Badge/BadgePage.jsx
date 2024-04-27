@@ -8,6 +8,7 @@ function BadgePage() {
         <div className="feature-col">
           <h3>Colors</h3>
           <ul>
+            <li>standard (default)</li>
             <li>red</li>
             <li>yellow</li>
             <li>green</li>
@@ -37,38 +38,37 @@ function BadgePage() {
         </div>
       </div>
       <div className="component-list">
-        <Badge onCLick={() => console.log("clickity")}>Badge Text</Badge>
-        <Badge color="red">Badge Text</Badge>
-        <Badge color="yellow">Badge Text</Badge>
-        <Badge color="green">Badge Text</Badge>
-        <Badge color="blue">Badge Text</Badge>
-        <Badge color="indigo">Badge Text</Badge>
-        <Badge color="purple">Badge Text</Badge>
-        <Badge color="pink">Badge Text</Badge>
+        <Badge onCLick={() => console.log("clickity")}>Standard Badge</Badge>
+        <Badge color="red">Red Badge</Badge>
+        <Badge color="yellow">Yellow Badge</Badge>
+        <Badge color="green">Green Badge</Badge>
+        <Badge color="blue">Blue Badge</Badge>
+        <Badge color="indigo">Indigo Badge</Badge>
+        <Badge color="purple">Purple Badge</Badge>
+        <Badge color="pink">Pink Badge</Badge>
       </div>
       <div className="component-list">
-        <Badge variant="pill">Pill Text</Badge>
-
+        <Badge variant="pill">Standard Pill</Badge>
         <Badge color="red" variant="pill">
-          Pill Text
+          Red Pill
         </Badge>
         <Badge color="yellow" variant="pill">
-          Pill Text
+          Yellow Pill
         </Badge>
         <Badge color="green" variant="pill">
-          Pill Text
+          Green Pill
         </Badge>
         <Badge color="blue" variant="pill">
-          Pill Text
+          Blue Pill
         </Badge>
         <Badge color="indigo" variant="pill">
-          Pill Text
+          Indigo Pill
         </Badge>
         <Badge color="purple" variant="pill">
-          Pill Text
+          Purple Pill
         </Badge>
         <Badge color="pink" variant="pill">
-          Pill Text
+          Pink Pill
         </Badge>
       </div>
     </>
