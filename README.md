@@ -2,7 +2,7 @@
 ## Module 11, Advanced React 
 from the Scrimba.com Frontend Career Path
 
-Learning Reusable Components
+### Reusable Components
 
 Learning Goals
 
