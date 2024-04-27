@@ -19,13 +19,9 @@ function TestimonialSimple({children, person, personTitle, onClick = () => {}}) 
       <div className="testimonial--signature">
         <h3>{person}</h3><p className="testimonial--separator"> / </p> <h3 className="testimonial--title">{personTitle}</h3>
       </div>
-      <div style={{ 
+      <div className="testimonial--grid-feature" style={{ 
         backgroundImage: `url(${smallBox})`,   
-        position: "absolute",
-        bottom: 0,
-        left: 0,
-        height: "60%",
-        width: "14%",
+
       }}>
       </div>
     </div>
