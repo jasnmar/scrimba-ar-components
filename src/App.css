@@ -30,7 +30,6 @@
 }
 
 .features {
-    color: white;
     display: flex;
     gap: 20px;
 }
@@ -48,7 +47,4 @@
 .feature-col ul {
     padding-left: 20px;
     margin-top: 10px;
-
-
-
 }
